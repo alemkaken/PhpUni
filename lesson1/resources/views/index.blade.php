@@ -1,18 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.app')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+@section('title', 'Index Page')
 
-<body>
+@section('content')
 
-    <div class="container">
-         <p>Name: {{ $name }}</p>
-    <p>Course: {{ $title }}</p>
-    </div>
-</body>
+    <h2>Index Page</h2>
 
-</html>
+    <p>This data comes from the Controller:</p>
+
+    <ul>
+        <li><strong>Name:</strong> {{ $name ?? 'Alem Kaken' }}</li>
+        <li><strong>Course:</strong> {{ $course ?? 'Laravel' }}</li>
+        <li><strong>Message:</strong> {{ $message ?? 'Hello from Controller' }}</li>
+    </ul>
+
+@endsection

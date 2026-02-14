@@ -9,7 +9,8 @@ class IndexController extends Controller
 
     $data = [
         'name' => 'Alem kaken',
-        'title' => 'Laravel Assignment2',
+        'course' => 'Laravel Assignment3',
+        'message' => 'successfully',
     ];
         
         return view('index',$data);
